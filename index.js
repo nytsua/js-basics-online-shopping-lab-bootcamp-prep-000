@@ -24,20 +24,20 @@ function viewCart() {
   } else if(cart.length === 2){
     var product1 = Object.keys(cart[0])[0];
     var product2 = Object.keys(cart[1])[0];
-    console.log(`In your cart, you have ${product1} at ${cart[0][product]} and ${product2} at ${cart[1][product2]}.`);
+    console.log(`In your cart, you have ${product1} at ${cart[0][product1]} and ${product2} at ${cart[1][product2]}.`);
   } else {
     var count = 1;
     var product = Object.keys(cart[0])[0];
-    var toReturn = `In your cart, you have ${product} at ${cart[count][product]}`;
+    var toReturn = `In your cart, you have ${product} at ${cart[0][product]}`;
     do {
       for(let i=1;i<cart.length-2;i++){
         var product = Object.keys(cart[i])[0];
-        toReturn += `, ${product} at ${cart[product]}`;
+        toReturn += `, ${product} at ${cart[i][product]}`;
       }
       count++;
     } while(count < cart.length-2);
     var product = Object.keys(cart[count])[0];
-    toReturn += ` and ${product} at ${cart[product]}.`
+    toReturn += ` and ${product} at ${cart[count][product]}.`
     console.log(toReturn);
   }
 }
