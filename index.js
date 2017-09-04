@@ -32,10 +32,10 @@ function viewCart() {
         var product = Object.keys(cart[i])[0];
         toReturn += `, ${product} at ${cart[product]}`
       }
-      
       count++;
     } while(count < cart.length-2);
-    toReturn += ` and ${products[count]} at ${cart[count]}`
+    var product = Object.keys(cart[count])[0];
+    toReturn += ` and ${product} at ${cart[product]}`
   }
 }
 
