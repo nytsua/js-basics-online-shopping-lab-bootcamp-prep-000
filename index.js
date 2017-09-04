@@ -81,5 +81,4 @@ addToCart("vanilla");
 addToCart("watermelon");
 addToCart("yams");
 
-removeFromCart("watermelon");
-removeFromCart('yams');
+placeOrder(234322);
