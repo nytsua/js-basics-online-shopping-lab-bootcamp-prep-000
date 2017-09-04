@@ -14,11 +14,11 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  var products = Object.keys();
   if(cart.length === 0){
     return 'Your shopping cart is empty.';
   } else if(cart.length === 1){
-    return `In your cart, you have ${products[0]} at ${cart[0]}.`
+    var product = cart[0].keys();
+    return `In your cart, you have ${products[0]} at ${cart[product]}.`
   } else if(cart.length === 2){
     return `In your cart, you have ${products[0]} at ${cart[0]} and ${products[1]} at ${cart[1]}.`
   } else {
@@ -33,7 +33,12 @@ function viewCart() {
 }
 
 function total() {
-  // write your code here
+  var keys = Object.keys();
+  var total = 0;
+  for(let i=0;i<keys.length;i++){
+    total += cart
+  }
+  return total;
 }
 
 function removeFromCart(item) {
