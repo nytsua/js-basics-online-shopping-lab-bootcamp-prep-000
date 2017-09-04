@@ -76,9 +76,3 @@ function placeOrder(cardNumber) {
   cart = [];
   console.log(toReturn);
 }
-
-addToCart("vanilla");
-addToCart("watermelon");
-addToCart("yams");
-
-placeOrder(234322);
