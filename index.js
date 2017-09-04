@@ -25,7 +25,8 @@ function viewCart() {
     return `In your cart, you have ${product1} at ${cart[product]} and ${product2} at ${cart[product2]}.`
   } else {
     var count = 1;
-    var toReturn = `In your cart, you have ${products[0]} at ${cart[0]}`
+    var product = Object.keys(cart[0])[0];
+    var toReturn = `In your cart, you have ${product} at ${cart[product]}`
     do {
       toReturn += `, ${products[count]} at ${cart[count]}`
       count++;
