@@ -30,8 +30,8 @@ function viewCart() {
     var product = Object.keys(cart[0])[0];
     var toReturn = `In your cart, you have ${product} at $${cart[0][product]}`;
     do {
-        var product1 = Object.keys(cart[count])[0];
-        toReturn += `, ${product1} at $${cart[count][product1]}`;
+      var product1 = Object.keys(cart[count])[0];
+      toReturn += `, ${product1} at $${cart[count][product1]}`;
       count++;
     } while(count < cart.length-1);
     var product = Object.keys(cart[count])[0];
