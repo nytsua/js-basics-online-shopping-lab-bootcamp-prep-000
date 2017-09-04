@@ -40,10 +40,11 @@ function viewCart() {
 }
 
 function total() {
-  var keys = Object.keys();
   var total = 0;
-  for(let i=0;i<keys.length;i++){
-    total += cart
+  for(let i=0;i<cart.length;i++){
+    var product = Object.keys(cart[i])[0];
+    var price = cart[product];
+    total += Number(price);
   }
   return total;
 }
