@@ -46,7 +46,7 @@ function total() {
   var total = 0;
   for(let i=0;i<cart.length;i++){
     var product = Object.keys(cart[i])[0];
-    var price = cart[product];
+    var price = cart[i][product];
     total += Number(price);
   }
   return total;
