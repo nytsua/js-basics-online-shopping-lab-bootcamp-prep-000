@@ -53,8 +53,8 @@ function total() {
 function removeFromCart(item) {
   var newCart;
   console.log('item: ', item);
+  console.log('cart: ', cart);
   for(let i=0;i<cart.length;i++){
-    console.log('cart: ', cart);
     if(cart[i].hasOwnProperty(item)){
       newCart = [...cart.splice(0,i),...cart.splice(1,cart.length)];
       console.log('updated: ', newCart);
