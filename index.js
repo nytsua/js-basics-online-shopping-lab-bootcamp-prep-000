@@ -38,6 +38,7 @@ function viewCart() {
     } while(count < cart.length-2);
     var product = Object.keys(cart[count])[0];
     toReturn += ` and ${product} at ${cart[product]}.`
+    console.log(toReturn);
   }
 }
 
