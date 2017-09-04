@@ -17,10 +17,10 @@ function viewCart() {
   if(cart.length === 0){
     return 'Your shopping cart is empty.';
   } else if(cart.length === 1){
-    var product = Object.keys();
+    var product = Object.keys()[0];
     return `In your cart, you have ${products[0]} at ${cart[product]}.`
   } else if(cart.length === 2){
-    var product = Object.keys();
+    var product = Object.keys()[0];
     return `In your cart, you have ${products[0]} at ${cart[0]} and ${products[1]} at ${cart[1]}.`
   } else {
     var count = 1;
