@@ -72,3 +72,4 @@ function placeOrder(cardNumber) {
 
 addToCart('lemons');
 viewCart();
+getCart();
