@@ -26,11 +26,11 @@ function viewCart() {
   } else {
     var count = 1;
     var product = Object.keys(cart[0])[0];
-    var toReturn = `In your cart, you have ${product} at ${cart[product]}`
+    var toReturn = `In your cart, you have ${product} at ${cart[product]}`;
     do {
-      for(let int i=1;i<cart.length-2;i++){
+      for(let i=1;i<cart.length-2;i++){
         var product = Object.keys(cart[i])[0];
-        toReturn += `, ${product} at ${cart[product]}`
+        toReturn += `, ${product} at ${cart[product]}`;
       }
       count++;
     } while(count < cart.length-2);
