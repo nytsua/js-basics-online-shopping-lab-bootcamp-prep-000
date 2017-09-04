@@ -51,10 +51,14 @@ function total() {
 }
 
 function removeFromCart(item) {
+  var newCart = [];
   for(let i=0;i<cart.length;i++){
     if(cart[i].hasOwnProperty(item)){
-      return [...cart.splice(0,i),...cart.splice(1,cart.length)]
+      newCart = [...cart.splice(0,i),...cart.splice(1,cart.length)]
     }
+  }
+  if(newCart.length > 0){
+    return newCart;
   }
   return 'That item is not in your cart.';
 }
