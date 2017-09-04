@@ -70,6 +70,6 @@ function placeOrder(cardNumber) {
   return toReturn;
 }
 
-addToCart('testabc');
+addToCart('lemons');
 addToCart('testttt');
 viewCart();
