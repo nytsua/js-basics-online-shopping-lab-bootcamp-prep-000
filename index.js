@@ -69,3 +69,8 @@ function placeOrder(cardNumber) {
   cart = [];
   return toReturn;
 }
+
+addToCart('item2');
+addToCart('item3');
+addToCart('item4');
+viewCart();
