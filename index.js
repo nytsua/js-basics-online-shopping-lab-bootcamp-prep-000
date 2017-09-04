@@ -51,20 +51,20 @@ function total() {
 }
 
 function removeFromCart(item) {
-  var newCart;
   console.log('item: ', item);
   console.log('cart: ', cart);
+  var removed = false;
   for(let i=0;i<cart.length;i++){
     if(cart[i].hasOwnProperty(item)){
-      newCart = [...cart.splice(0,i),...cart.splice(1,cart.length)];
+      removed = true;
+      cart = [...cart.splice(0,i),...cart.splice(1,cart.length)];
       console.log('updated: ', newCart);
       break;
     }
   }
-  if(newCart){
-    return newCart;
+  if(!removed){
+    console.log('That item is not in your cart.');
   }
-  console.log('That item is not in your cart.');
   return cart;
 }
 
