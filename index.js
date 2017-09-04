@@ -79,3 +79,4 @@ addToCart("watermelon");
 addToCart("yams");
 
 removeFromCart("watermelon");
+removeFromCart('yams');
